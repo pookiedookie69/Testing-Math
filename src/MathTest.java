@@ -110,6 +110,16 @@ public class MathTest {
     }
 
 
+    @ParameterizedTest
+    @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
+    public void testZeroPower(double base) {
+        double eqLeft = (Math.pow(base,0));
+        double eqRight = 1;
+        assertEquals(eqLeft,eqRight,"power of 0");
+    }
+
+
+
 
 
 
