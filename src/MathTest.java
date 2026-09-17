@@ -126,7 +126,13 @@ public class MathTest {
         assertEquals(eqLeft,eqRight,"power of 1");
     }
 
-
+    @ParameterizedTest
+    @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
+    public void testZeroBase(double exponent) {
+        double eqLeft = (Math.pow(0,exponent));
+        double eqRight = 0;
+        assertEquals(eqLeft,eqRight,"base 0");
+    }
 
 
 
