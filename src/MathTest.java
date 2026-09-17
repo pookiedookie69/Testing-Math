@@ -45,7 +45,6 @@ public class MathTest {
 
     }
 
-
     @ParameterizedTest
     @CsvSource({
             "6, 5, 17",
